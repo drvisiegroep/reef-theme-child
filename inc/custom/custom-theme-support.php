@@ -1,4 +1,9 @@
 <?php
+
+// 
+//!! - Denk eraan dat de kleuren in de editor options en de css hetzelfde moeten zijn. - !!
+//
+
 function reef_setup() {
 
             // Pad voor vertalingen

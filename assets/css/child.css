@@ -7,7 +7,7 @@
 */
 :root{
   /* Kleuren */
-  --primaryColor:#94c35a;
+  --primaryColor:red;
   --primaryVariationColor:#5c911b;
   --secondaryColor:#0073aa;
   --secondaryVariationColor:#0d3452;
@@ -56,3 +56,4 @@
   /* Footer */
   --siteFooterIconMaxWidth: 40px;
 }
+

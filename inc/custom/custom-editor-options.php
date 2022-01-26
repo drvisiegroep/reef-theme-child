@@ -37,22 +37,22 @@ function reef_editor_options() {
               array(
                   'name'  => __( 'Primary', 'reef-theme' ),
                   'slug'  => 'primary',
-                  'color'	=> '#f36b39',
+                  'color'	=> '#f26c45',
               ),
               array(
                   'name'  => __( 'Primary-variation', 'reef-theme' ),
                   'slug'  => 'primary-variation',
-                  'color'	=> '#5c911b',
+                  'color'	=> '#f26c45',
               ),
               array(
                   'name'  => __( 'Secondary', 'reef-theme' ),
                   'slug'  => 'secondary',
-                  'color' => '#0073aa',
+                  'color' => '#9fa099',
               ),
               array(
                   'name'  => __( 'Secondary-variation', 'reef-theme' ),
                   'slug'  => 'secondary-variation',
-                  'color' => '#0d3452',
+                  'color' => '#c1ceb0',
               ),
               array(
                   'name'  => __( 'Black', 'reef-theme' ),

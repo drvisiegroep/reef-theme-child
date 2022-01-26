@@ -1,23 +1,38 @@
 /*
      !! - Denk eraan dat de kleuren in de editor options en de css hetzelfde moeten zijn. - !!
 */
+@font-face{
+  font-family: 'YuGothicUI-Light';
+  font-stretch: normal;
+  font-display: swap;
+  src: url('../fonts/subset-YuGothicUI-Light.woff2') format('woff2');
+}
+
+@font-face{
+  font-family: 'YuGothicUI-Semibold';
+  font-stretch: normal;
+  font-display: swap;
+  src: url('../fonts/subset-YuGothicUI-Semibold.woff2') format('woff2');
+}
+
+
 
 /* 
     Variabelen
 */
 :root{
   /* Kleuren */
-  --primaryColor:purple;
-  --primaryVariationColor:#5c911b;
-  --secondaryColor:#0073aa;
-  --secondaryVariationColor:#0d3452;
+  --primaryColor:#f26c45;
+  --primaryVariationColor:#f26c45;
+  --secondaryColor:#9fa099;
+  --secondaryVariationColor:#c1ceb0;
   --blackCustomColor:#000000;
   --whiteCustomColor:#ffffff;
   --greyCustomColor:#d5d2cd;
 
   /* Fonts */
-  --primaryFont:'Roboto', sans-serif;
-  --secondaryFont:var(--primaryFont);
+  --primaryFont:'YuGothicUI-Light', sans-serif;
+  --secondaryFont:'YuGothicUI-Semibold', sans-serif;
 
   /* Breedte wrapper, inner blocks en zoekveld wrap */
   --siteWidth: 1200px;
@@ -37,10 +52,11 @@
   /* Header */
   --siteTitleIconMaxHeight: 100px;
   --menuTextColor: var(--primaryColor);
+  --menuFontSize: 14px;
   --menuLetterSpacing: 0;
-  --menuCurrentItemColor: var(--secondaryColor);
-  --menuTextTransform: inherit;
-  --menuItemHoverColor: var(--blackCustomColor);
+  --menuCurrentItemColor: var(--secondaryVariationColor);
+  --menuTextTransform: uppercase;
+  --menuItemHoverColor: var(--secondaryVariationColor);
   --menuItemHoverBackground: inherit;
   --subMenuBackgroundColor: #eee;
   --subMenuBackgroundColorHover: #fefefe;
@@ -55,4 +71,23 @@
 
   /* Footer */
   --siteFooterIconMaxWidth: 40px;
+}
+
+.title-menu-wrap {  display: flex;}
+.site-header .wrap .header-search {top: 100px;}
+
+.banner::before{content:"";position:absolute;top:0;bottom:0;right:100%;width:3000px;display:table;height:100%;background:var(--secondaryVariationColor);}
+.banner::after{content:"";position:absolute;top:0;bottom:0;left:100%;width:3000px;display:table;height:100%;background:var(--secondaryVariationColor);}
+.banner {max-height: 300px;position: relative;overflow:visible;}
+
+.site-footer{background-color: var(--secondaryVariationColor);}
+.site-footer .footer-menu { grid-template-columns: 1fr 1fr;}
+.site-footer .footer-menu .widget:last-child{text-align: right;}
+.site-footer .footer-menu .icon.icon-sustain-logo {max-width: 300px;}
+
+.af-label{display:none;}
+
+@media (min-width: 769px) {
+  .site-header .wrap .title-menu-wrap > .menu-toggle,
+  .site-header .wrap .title-menu-wrap > .search-toggle {display: none;  }
 }

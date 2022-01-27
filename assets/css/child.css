@@ -106,7 +106,7 @@
 .site-footer .footer-menu { grid-template-columns: 1fr 1fr;}
 .site-footer .footer-menu .widget:last-child{text-align: right;}
 .site-footer .footer-menu .icon.icon-sustain-logo {max-width: 300px;}
-.site-footer .socials-bar {padding:8px;margin-bottom:32px;background-color:var(--secondaryColor);display: flex;flex-direction: row;justify-content:center;align-items:center;}
+.site-footer .socials-bar {padding:8px;margin-bottom:32px;background-color:var(--secondaryColor);display: flex;flex-direction: row;justify-content:center;align-items:center;border-top: 1px solid var(--primaryColor);border-bottom: 1px solid var(--primaryColor);}
 .site-footer .socials-bar .icon{height: 25px;}
 .site-footer .socials-bar .widget{    margin: 10px 20px 10px 0;}
 .site-footer .socials-bar .widget p{margin:0;height: 40px;width: 40px;background-color: #fff;border-radius: 50%;display: flex;justify-content: center;align-items: center;}
@@ -114,9 +114,10 @@
 .site-footer .socials-bar .widget:last-child{margin-right:0}
 
 .af-label{display:none;}
+.acf-fields > .acf-field, .af-submit{padding: 15px 0;}
 
 @media (min-width: 769px) {
   .site-header .wrap {display: flex}
-  .site-header .wrap .header-search {top: 100px;}
+  .site-header .wrap .header-search {top: 100px;right:unset}
   .site-main {margin: var(--siteContentMarginDesktop) 0;}
 }

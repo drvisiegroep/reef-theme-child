@@ -15,8 +15,6 @@
   src: url('../fonts/subset-YuGothicUI-Semibold.woff2') format('woff2');
 }
 
-
-
 /* 
     Variabelen
 */
@@ -80,22 +78,23 @@
   --siteFooterMadeByColor: var(--blackCustomColor);
 }
 
-/* TODO: header.php aangepast met extra wrapper (title-menu-wrap) voor verplaatsen menu. Kijken of we die vast meenemen naar thema */
-.title-menu-wrap {display: flex;}
-.site-header .wrap .header-search {top: 100px;}
+.site-header .wrap .header-search {	top: 34px;	right: -31px;}
+.site-header .wrap {display: block}
+.site-header .banner {max-height: 300px;}
 
 .entry-content .wp-block-query ul{padding-left:0;}
-
-.banner {max-height: 300px;position: relative;overflow:visible;}
 
 .child-pages {display: grid;grid-template-columns: 1fr 1fr;gap: 60px;}
 .child-pages .wp-block-media-text{gap: 30px;margin-bottom: 0;}
 .child-pages .wp-block-buttons.is-content-justification-right{display:flex;}
 .child-page{display:grid;grid-template-columns: 40% 1fr;}
+
+/* fix voor object fill, bug(?) in 5.9 ivm inline-block op a */
 .wp-block-query figure{margin-top: 0}
 .wp-block-post-featured-image a {display:block;}
 
-.reviews .wp-block-group__inner-container {/* display: grid; *//* grid-template-columns: 1fr 1fr; */gap: 40px;column-count: 2;}
+.reviews .wp-block-group__inner-container {gap: 40px;column-count: 2;}
+/* column break fix voor chrome */
 .reviews .wp-block-quote {background-color:var(--greyCustomColor);padding: 40px;border-radius: 5px;margin: 0;height: max-content;-webkit-column-break-inside: avoid;-moz-column-break-inside:avoid;-moz-page-break-inside:avoid;page-break-inside: avoid;break-inside: avoid-column;margin-bottom: 40px;}
 .reviews .wp-block-quote p {font-size: 16px}
 .reviews .wp-block-quote{background: transparent url(../svg/quote-oranje.svg) no-repeat top 10px left 10px;background-size:36px auto;padding-top:47px;text-align:left;background-color: var(--greyCustomColor);}
@@ -116,19 +115,8 @@
 
 .af-label{display:none;}
 
-.site-header .wrap .title-menu-wrap > .menu-toggle,.site-header .wrap .title-menu-wrap > .search-toggle{position:absolute;top:0;width:48px;height:48px;right:48px;}
-.site-header .wrap .title-menu-wrap > .search-toggle{right:0;}
-.site-header.active .wrap .title-menu-wrap > .menu-toggle,.site-header.active .wrap .title-menu-wrap > .search-toggle{display:block;position:fixed;top:0;right:0;z-index:10;}
-.site-header.active .wrap .title-menu-wrap > .menu-toggle{right:48px;}
-
-.search-toggle,.menu-toggle{background:transparent;border:none;border-radius:0;box-shadow:none;padding:0;outline:none;cursor:pointer;line-height:0;text-align:center;}
-.search-toggle .close,.menu-toggle .close{display:none;}
-.search-toggle:hover,.search-toggle.active,.menu-toggle:hover,.menu-toggle.active{background:#eee;}
-.search-toggle.active .close,.menu-toggle.active .close{display:inline;}
-.search-toggle.active .open,.menu-toggle.active .open{display:none;}
-
 @media (min-width: 769px) {
-  .site-header .wrap .title-menu-wrap > .menu-toggle,
-  .site-header .wrap .title-menu-wrap > .search-toggle {display: none;  }
+  .site-header .wrap {display: flex}
+  .site-header .wrap .header-search {top: 100px;}
   .site-main {margin: var(--siteContentMarginDesktop) 0;}
 }

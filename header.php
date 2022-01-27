@@ -34,7 +34,7 @@ tha_body_top();
 
     <header class="site-header" role="banner">
     	<div class="wrap">
-			<div class="title-menu-wrap">
+			<!-- <div class="title-menu-wrap"> -->
 			<?php tha_header_top();	?>
 
     		<div class="title-area">
@@ -46,7 +46,7 @@ tha_body_top();
     		</div> <!-- /.title-area -->
 
 			<?php tha_header_bottom(); ?>
-			</div>
+			<!-- </div> -->
     	</div> <!-- /.wrap -->
     </header>
 

@@ -20,3 +20,4 @@ include( get_stylesheet_directory() . '/inc/custom/custom-editor-options.php');
 include( get_stylesheet_directory() . '/inc/custom/custom-theme-support.php');
 include( get_stylesheet_directory() . '/inc/custom/custom-widgets.php');
 include( get_stylesheet_directory() . '/inc/custom/custom-enqueue.php');
+include( get_stylesheet_directory() . '/inc/custom/custom-shortcodes.php');

@@ -19,28 +19,3 @@ function reef_child_editor_styles() {
     // add_editor_style( 'https://fonts.googleapis.com/css?family=Roboto:wght@300;400;700&display=swap' );
 }
 add_action( 'after_setup_theme', 'reef_child_editor_styles', 99);
-
-
-// function reef_get_font_face_styles() {
-
-//     return "
-//     @font-face{
-//         font-family: 'YuGothicUI-Light';
-//         font-stretch: normal;
-//         font-display: swap;
-//         src: url('" . get_theme_file_uri( 'assets/fonts/subset-YuGothicUI-Light.woff2' ) . "') format('woff2');
-//     }
-
-//     @font-face{
-//         font-family: 'YuGothicUI-Semibold';
-//         font-stretch: normal;
-//         font-display: swap;
-//         src: url('" . get_theme_file_uri( 'assets/fonts/subset-YuGothicUI-Semibold.woff2' ) . "') format('woff2');
-//     }
-//     ";
-
-// }
-// function reef_load_fonts() {
-//     wp_add_inline_style( 'reef-custom-fonts', reef_get_font_face_styles() );
-// }
-// add_action( 'wp_enqueue_scripts', 'reef_load_fonts');

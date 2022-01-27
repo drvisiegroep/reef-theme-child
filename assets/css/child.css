@@ -73,7 +73,7 @@
   --siteFooterIconMaxWidth: 40px;
 }
 
-.title-menu-wrap {  display: flex;}
+.title-menu-wrap {display: flex;}
 .site-header .wrap .header-search {top: 100px;}
 
 .banner::before{content:"";position:absolute;top:0;bottom:0;right:100%;width:3000px;display:table;height:100%;background:var(--secondaryVariationColor);}

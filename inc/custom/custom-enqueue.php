@@ -13,6 +13,7 @@ function child_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'child_scripts');
 
+
 // Add action van de child moet een lagere prioriteit hebben dan die van de parent.
 function reef_child_editor_styles() {
     add_editor_style('assets/css/child.css');

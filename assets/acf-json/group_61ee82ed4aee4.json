@@ -76,7 +76,7 @@
             },
             "hide_admin": 0,
             "default_value": "",
-            "placeholder": "",
+            "placeholder": "Uw bericht...",
             "maxlength": "",
             "rows": "",
             "new_lines": ""
@@ -87,7 +87,7 @@
             {
                 "param": "af_form",
                 "operator": "==",
-                "value": "form_61ee78ce90d81"
+                "value": "form_61f2544fe018b"
             }
         ]
     ],
@@ -100,5 +100,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1643022687
+    "modified": 1643358299
 }

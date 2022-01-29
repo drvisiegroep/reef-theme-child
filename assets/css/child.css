@@ -16,21 +16,23 @@
 }
 
 /* 
-    Variabelen
+  ----------
+  Variabelen
+  ----------
 */
 :root{
   /* Kleuren */
-  --primaryColor:#f26c45;
-  --primaryVariationColor:#e26641;
-  --secondaryColor:#9fa099;
-  --secondaryVariationColor:#c1ceb0;
+  --primaryColor:blue;
+  --primaryVariationColor:#5c911b;
+  --secondaryColor:#0073aa;
+  --secondaryVariationColor:#0d3452;
   --blackCustomColor:#000000;
   --whiteCustomColor:#ffffff;
-  --greyCustomColor:#d5d2cd85;
+  --greyCustomColor:#d5d2cd;
 
   /* Fonts */
-  --primaryFont:'YuGothicUI-Light', sans-serif;
-  --secondaryFont:'YuGothicUI-Semibold', sans-serif;
+  --primaryFont:'Roboto', sans-serif;
+  --secondaryFont:var(--primaryFont);
 
   /* Breedte wrapper, inner blocks en zoekveld wrap */
   --siteWidth: 1200px;
@@ -48,17 +50,17 @@
   --buttonHoverBackgroundColor: var(--primaryVariationColor);
 
   /* Blocks */
-  --mediaTextBlockMarginBottom: 80px;
-  --mediaTextBlockGap: 60px;
-  
+  --mediaTextBlockMarginBottom: 60px;
+  --mediaTextBlockGap: 40px;
+
   /* Header */
   --siteTitleIconMaxHeight: 100px;
   --menuTextColor: var(--primaryColor);
-  --menuFontSize: 14px;
+  --menuFontSize: 16px;
   --menuLetterSpacing: 0;
-  --menuCurrentItemColor: var(--secondaryVariationColor);
-  --menuTextTransform: uppercase;
-  --menuItemHoverColor: var(--secondaryVariationColor);
+  --menuCurrentItemColor: var(--secondaryColor);
+  --menuTextTransform: inherit;
+  --menuItemHoverColor: var(--blackCustomColor);
   --menuItemHoverBackground: inherit;
   --subMenuBackgroundColor: #eee;
   --subMenuBackgroundColorHover: #fefefe;
@@ -72,10 +74,15 @@
   --siteMainFigureBorderRadius: 5px;
 
   /* Footer */
-  --footerBackgroundColor: #626e52;
   --siteFooterIconMaxWidth: 40px;
-  --siteFooterLinkColor: var(--primaryColor);
+  --footerBackgroundColor: var(--secondaryVariationColor);
+  --siteFooterLinkColor: var(--secondaryColor);
   --siteFooterMadeByColor: var(--blackCustomColor);
+
+  /* Post options */
+  --showInfoAbovePost: none;
+  --showInfoBelowPost: none;
+  
 }
 
 .site-header .wrap .header-search {right: -31px;	}

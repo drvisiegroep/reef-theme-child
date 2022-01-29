@@ -1,4 +1,17 @@
-/* child */
+/* child login */
+:root{
+    /* Kleur */
+    --primaryColor:#f26c45;
+    --primaryVariationColor:#e26641;
+    --secondaryColor:#9fa099;
+    --secondaryVariationColor:#c1ceb0;
+    --blackCustomColor:#000000;
+    --whiteCustomColor:#ffffff;
+    --greyCustomColor:#d5d2cd85;
+    /* Font */
+    --primaryFont:'YuGothicUI-Light', sans-serif;
+    --secondaryFont:'YuGothicUI-Semibold', sans-serif;
+    }
 
 body.login {background-color: red;}
 body.login div#login {}

@@ -7,7 +7,7 @@ function reef_login_logo() {
     ?>
     <style type="text/css">
         #login h1 a, .login h1 a {
-            background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/assets/svg/wa_logo.svg);
+            background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/assets/svg/logo.svg);
             width:320px;
             height:65px;
             background-size: 320px 65px;
@@ -16,7 +16,7 @@ function reef_login_logo() {
         }
     </style>
     <?php 
-    wp_enqueue_style( 'reef-login', get_stylesheet_directory_uri() . '/assets/css/child_login.css' );
+    wp_enqueue_style( 'reef-login-child', get_stylesheet_directory_uri() . '/assets/css/child_login.css' );
 }
 add_action( 'login_enqueue_scripts', 'reef_login_logo' );
 

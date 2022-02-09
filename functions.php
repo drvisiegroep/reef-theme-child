@@ -22,3 +22,5 @@ include( get_stylesheet_directory() . '/inc/custom/custom-widgets.php');
 include( get_stylesheet_directory() . '/inc/custom/custom-enqueue.php');
 include( get_stylesheet_directory() . '/inc/custom/custom-shortcodes.php');
 include( get_stylesheet_directory() . '/inc/custom/custom-login.php');
+include( get_stylesheet_directory() . '/inc/custom/custom-acf-blocks.php');
+include( get_stylesheet_directory() . '/inc/custom/custom-post-types.php');

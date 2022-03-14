@@ -8,6 +8,8 @@
 // Template Name: product-gallery
 // Template Post Type: page
 
+// https://developer.wordpress.org/themes/template-files-section/page-template-files/#file-organization-of-page-templates
+
 $id = get_the_ID();
 $parent = wp_get_post_parent_id( $id);
 

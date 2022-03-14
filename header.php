@@ -39,7 +39,7 @@ tha_body_top();
 
     		<div class="title-area">
 
-				<p class="site-title"><a href="<?php echo esc_url( home_url() );?>" rel="home"><?php echo wa_svg_icon(['icon' => 'sustain-logo']); ?>
+				<p class="site-title"><a href="<?php echo esc_url( home_url() );?>" rel="home"><?php echo wa_svg_icon(['icon' => 'logo']); ?>
 					<?php if($logo_text) echo get_bloginfo( 'name' ); ?>
 				</a></p>
 
@@ -54,18 +54,12 @@ tha_body_top();
 
 
 	<?php 
-		if( class_exists('ACF') ) {
-			$bgcolor = get_field('achtergrondkleur_banner');
-		} else {
-			$bgcolor = '#9fa099';
-		}
 		
 		if( class_exists('ACF') ) {
 			if(empty($bgurl)){ $bgurl = get_field('banner_afbeelding', 'option'); }
 		}
 		if(!is_archive() && empty($bgurl)){$bgurl = get_the_post_thumbnail_url();}
 		if(empty($bgurl)){ $bgurl = get_the_post_thumbnail_url(get_option( 'page_on_front' )); }
-		echo '<div class="banner-wrap" style="background-color: ' . $bgcolor . '">';
 		echo '<div class="wrap banner" style="background-image: url('. $bgurl .')"></div>';
 		echo '</div>';
 	?>

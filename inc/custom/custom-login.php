@@ -1,8 +1,15 @@
 <?php
-// Child
 //
+// Child Theme
 // Login logo / styles
 //
+// @package      reef-theme
+// @author       Daniël R.
+// @since        1.0.0
+//
+
+// Wordpress gebruikt een aparte styling voor de loginpagina. Hier kan je het logo aanpassen
+// en de css enqueuen. in wordpress 5.9 -is een languagepicker toegevoegd aan het login menu, die kan je hier aanzetten.
 function reef_login_logo() { 
     ?>
     <style type="text/css">

@@ -1,4 +1,16 @@
 <?php
+//
+// Child theme
+// Custom | Editor Options 
+//
+// @package      reef-theme
+// @author       Daniël R.
+// @since        1.0.0
+
+//
+// Hier kan je alle kleuren en font-sizes aanpassen die je in de editor beschikbaar hebt. (Menu aan de linkerkant)
+// Vergeet niet deze veranderingen ook mee te nemen in de css.
+//
 function reef_editor_options() {
 
       // Font size uitzetten
@@ -37,22 +49,22 @@ function reef_editor_options() {
               array(
                   'name'  => __( 'Primary', 'reef-theme' ),
                   'slug'  => 'primary',
-                  'color'	=> '#f26c45',
+                  'color'	=> '#00204a',
               ),
               array(
                   'name'  => __( 'Primary-variation', 'reef-theme' ),
                   'slug'  => 'primary-variation',
-                  'color'	=> '#f26c45',
+                  'color'	=> '#005792',
               ),
               array(
                   'name'  => __( 'Secondary', 'reef-theme' ),
                   'slug'  => 'secondary',
-                  'color' => '#9fa099',
+                  'color' => '#00bbf0',
               ),
               array(
                   'name'  => __( 'Secondary-variation', 'reef-theme' ),
                   'slug'  => 'secondary-variation',
-                  'color' => '#c1ceb0',
+                  'color' => '#fdb44b',
               ),
               array(
                   'name'  => __( 'Black', 'reef-theme' ),

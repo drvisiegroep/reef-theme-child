@@ -1,6 +1,7 @@
 <?php
 //
 // Footer
+// Child theme
 //
 // @package      reef-theme
 // @author       Daniël R.

@@ -1,19 +1,8 @@
 /*
      !! - Denk eraan dat de kleuren in de editor options en de css hetzelfde moeten zijn. - !!
+     Deze kan je vinden in /inc/custom/custom-editor-options.php
 */
-@font-face{
-  font-family: 'YuGothicUI-Light';
-  font-stretch: normal;
-  font-display: swap;
-  src: url('../fonts/subset-YuGothicUI-Light.woff2') format('woff2');
-}
 
-@font-face{
-  font-family: 'YuGothicUI-Semibold';
-  font-stretch: normal;
-  font-display: swap;
-  src: url('../fonts/subset-YuGothicUI-Semibold.woff2') format('woff2');
-}
 
 /* 
     Variabelen
@@ -21,10 +10,10 @@
 
 :root{
   /* Kleuren */
-  --primaryColor:blue;
-  --primaryVariationColor:#5c911b;
-  --secondaryColor:#0073aa;
-  --secondaryVariationColor:#0d3452;
+  --primaryColor:#00204a;
+  --primaryVariationColor:#005792; 
+  --secondaryColor:#00bbf0; 
+  --secondaryVariationColor:#fdb44b; 
   --blackCustomColor:#000000;
   --whiteCustomColor:#ffffff;
   --greyCustomColor:#d5d2cd;
@@ -59,29 +48,7 @@
   }
 }
 
-h1, h2, h3 { font-family:var(--primaryFont); }
 
-h1, h2, h3 { font-family:var(--primaryFont); }
-h1, h2 { font-size:var(--wp--preset--font-size--huge); }
-h3 { font-size:var(--wp--preset--font-size--x-large); }
-h4, h5, h6 { font-size:var(--wp--preset--font-size--normal); font-weight:bold; }
-
-
-.nav-menu .nav-primary .menu-item.search button {transform:scale(0.8);background: transparent;}
-.nav-menu .nav-primary .menu-item.search path { fill:var(--secondaryColor); }
-.nav-menu .nav-primary .menu-item.search:hover path { fill:var(--primaryColor); }
-
-
-.child-pages {display: grid;grid-template-columns: 1fr 1fr;gap: 60px;}
-.child-pages .wp-block-media-text{gap: 30px;margin-bottom: 0;}
-.child-pages .wp-block-buttons.is-content-justification-right{display:flex;}
-.child-page{display:grid;grid-template-columns: 40% 1fr;}
-
-/* fix voor object fill, bug(?) in 5.9 ivm inline-block op a */
-
-.wp-block-post-featured-image a {display:block;}
-
-.wp-block-latest-posts.is-grid { gap: var(--defaultGap); }
 
 
 

@@ -1,4 +1,20 @@
 <?php
+//
+// Child Theme
+// Custom | Shortcodes
+//
+// @package      reef-theme
+// @author       Daniël R.
+// @since        1.0.0
+//
+// Plaats hier je custom shortcodes. Shortcodes zijn niets meer dan een stuk code die we in de editor in een shortcode tag te zetten.
+// Het onderstaande voorbeeld is bijvoorbeeld een hortcode om paginas te laten zien die een sibling zijn van de getoonde pagina.
+//
+// https://kinsta.com/nl/blog/wordpress-shortcodes/
+// https://wpshout.com/how-to-create-wordpress-shortcodes/
+// https://codex.wordpress.org/Shortcode_API
+//
+
 add_post_type_support( 'page', 'excerpt' );
 function pages($show){
   $id = get_the_ID();

@@ -1,9 +1,24 @@
 <?php
+//
+// Child Theme
+// Custom | Theme Support
+//
+// @package      reef-theme
+// @author       Daniël R.
+// @since        1.0.0
+// Note: De theme support in het hoofdthema staat niet in custom maar in inc. Omdat dit deel is van de standaard functionaliteit.
 
-// 
-//!! - Denk eraan dat de kleuren in de editor options en de css hetzelfde moeten zijn. - !!
+//
+// Registreer en laad hier je Wordpress functionaliteit
+// https://developer.wordpress.org/block-editor/how-to-guides/themes/theme-support/
 //
 
+//
+// Deze functie wordt 'gehooked' in in de after_setup_theme hook. Deze gaat voor de init hook. 
+// Dit omdat de init hook voor bvepaalde eigenschappen (post-thumbnails bijvoorbeeld) te laat komt.
+// https://wordpress.stackexchange.com/questions/14797/difference-between-after-setup-theme-and-init-action-hooks
+// https://codex.wordpress.org/Plugin_API/Action_Reference
+//
 function reef_setup() {
 
             // Pad voor vertalingen
